@@ -8,8 +8,73 @@
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
-  <body>
-    <h1>ポートフォリオサイト</h1>
+  <body class="wrapper">
+    <header class="site-header">
+      <img src="images/instaglam.jpg" alt="" class="header-image" />
+      <nav class="nav"></nav>
+    </header>
+    <div class="profile-header">
+      <img src="images/icon.png" alt="Profile Picture" class="profile-image" />
+      <div class="profile-info">
+        <h2 class="username">@yahiro_munechika_</h2>
+        <p class="profile-stats">
+          年齢 <strong>21</strong> | 誕生日 <strong>0303</strong> | 血液型
+          <strong>AB</strong>
+        </p>
+        <p class="bio">
+          宗近八尋<br />
+          東京生まれ／熊本育ち／京都在住<br />
+          文学部＞哲学＞論理学<br />
+        </p>
+      </div>
+    </div>
+    <div class="gallery">
+      <div
+        class="gallery-item"
+        data-description='Avishai Cohenという人の"Smash"という曲にどハマリしている。本当に格好いいから聴いてほしいです'
+      >
+        <img src="images/smash.png" alt="Image 1" />
+      </div>
+      <div
+        class="gallery-item"
+        data-description="ドライブが趣味です。これは天橋立の写真。"
+      >
+        <img src="images/amano.png" alt="Image 2" />
+      </div>
+      <div
+        class="gallery-item"
+        data-description="大学では文学部自治会に所属しています。自治会室には学生運動の名残が…"
+      >
+        <img src="images/jitikai.png" alt="Image 3" />
+      </div>
+      <div
+        class="gallery-item"
+        data-description="サイクリング趣味が高じて整備も覚えたのですが、この時は地獄でした"
+      >
+        <img src="images/chari.png" alt="Image 4" />
+      </div>
+      <div
+        class="gallery-item"
+        data-description="舐達麻が大好き。ファーストアルバムは必聴です"
+      >
+        <img src="images/namedaruma.png" alt="Image 5" />
+      </div>
+      <div
+        class="gallery-item"
+        data-description="実家の猫　猫の長さって決まってないらしい"
+      >
+        <img src="images/neko.png" alt="Image 6" />
+      </div>
+      <div class="gallery-item" data-description="高校のときは山岳部でした">
+        <img src="images/tozan.png" alt="Image 7" />
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>
